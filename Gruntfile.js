@@ -297,9 +297,8 @@ module.exports = function (grunt) {
             //test: [
             //  '<%= app_files.jsunit %>'
             //],
-            // gruntfile: [
-              // 'Gruntfile.js'
-            // ],
+            gruntfile: [
+            ],
             options: {
                 /* 
                 Enforcing options
@@ -440,7 +439,8 @@ module.exports = function (grunt) {
                 configFile: '<%= build_dir %>/karma-unit.js'
             },
             unit: {
-                singleRun: true
+                singleRun: true,
+                background: true
             },
             continuous: {
                 background: true
