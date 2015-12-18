@@ -1,5 +1,5 @@
 ﻿(function () {
-    var mod = angular.module('bpatl.directives.numbers', []);
+    var mod = angular.module('common.directives.numbers', []);
 
     mod.directive('numbersOnly', function () {
         return {

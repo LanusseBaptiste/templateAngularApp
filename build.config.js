@@ -86,13 +86,8 @@ module.exports = {
 
           'vendor/bootstrap/dist/js/bootstrap.js',
           'vendor/angular-webstorage/angular-webstorage.js',
-          'vendor/sprintf/src/sprintf.js',
-          'vendor/sprintf/src/angular-sprintf.js',
-          'vendor/angular-busy/dist/angular-busy.js',
 
           'src/lib/leaflet/dist/leaflet.js',
-          'node_modules/Leaflet.EasyButton/src/easy-button.js',
-          'node_modules/Leaflet.ExtraMarkers-master/src/leaflet.extra-markers.js',
 
           'src/lib/custom-init.js',
           'src/lib/dataTables/js/jquery.dataTables.js',
@@ -102,10 +97,7 @@ module.exports = {
           'src/lib/jquery/jquery.checkable.js',
           'src/lib/modernizr.js',
           'src/lib/overlay.js',
-          'src/lib/waypoints.min.js',
-
-          'src/lib/cordova/cordova.js',
-          'src/lib/cordova/cordova_plugins.js'
+          'src/lib/waypoints.min.js'
         ],
         jsCopyOnly: [
             // we want to copy cordova files to the server destination folder but we do NOT want to add a script tag for those.
@@ -113,12 +105,8 @@ module.exports = {
         ],
         css: [
             'vendor/bootstrap/dist/css/bootstrap.css',
-            'vendor/components-font-awesome/css/font-awesome.css',
-            'vendor/angular-busy/dist/angular-busy.css',
 
             'src/lib/leaflet/dist/leaflet.css',
-            'node_modules/Leaflet.EasyButton/src/easy-button.css',
-            'node_modules/Leaflet.ExtraMarkers-master/src/leaflet.extra-markers.css',
 
             'src/lib/timeline/css/timeline.css',
             'src/lib/dataTables/css/dataTables.bootstrap.css',
@@ -134,14 +122,10 @@ module.exports = {
         assets: [
         ],
         fonts: [
-            'vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2',
+            'vendor/bootstrap/fonts/glyphicons-halflings-regular.svg',
             'vendor/bootstrap/fonts/glyphicons-halflings-regular.woff',
             'vendor/bootstrap/fonts/glyphicons-halflings-regular.eot',
-            'vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf',
-            'vendor/components-font-awesome/fonts/fontawesome-webfont.woff2',
-            'vendor/components-font-awesome/fonts/fontawesome-webfont.woff',
-            'vendor/components-font-awesome/fonts/fontawesome-webfont.eot',
-            'vendor/components-font-awesome/fonts/fontawesome-webfont.ttf'
+            'vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf'
         ]
     }
 };

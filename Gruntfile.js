@@ -11,7 +11,6 @@ module.exports = function (grunt) {
      * Load in our build configuration file.
      */
     var userConfig = require('./build.config.js');
-
     /**
      * This is the configuration object Grunt uses to give each plugin its 
      * instructions.
@@ -441,12 +440,10 @@ module.exports = function (grunt) {
                 configFile: '<%= build_dir %>/karma-unit.js'
             },
             unit: {
-                runnerPort: 9101,
-                background: true
+                singleRun: true
             },
             continuous: {
-                // default true,  set false for debugging
-                singleRun: true
+                background: true
             }
         },
 
@@ -636,6 +633,7 @@ module.exports = function (grunt) {
      * `delta`) and then add a new task called `watch` that does a clean build
      * before watching for changes.
      */
+
     grunt.renameTask('watch', 'delta');
     grunt.registerTask('watch', ['build', 'karma:unit', 'delta']);
 

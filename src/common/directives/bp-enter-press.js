@@ -1,5 +1,5 @@
 ﻿(function () {
-    var mod = angular.module('bpatl.directives.keybinding', []);
+    var mod = angular.module('common.directives.keybinding', []);
 
     mod.directive('bpEnterPress', function () {
         return {
